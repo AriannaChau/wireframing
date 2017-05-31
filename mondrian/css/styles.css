@@ -146,6 +146,34 @@
   }
 }*/
 
+@media screen and (max-height: 860px) and (min-width: 600px) {
+  .main-container, .main {
+    height: 100vh;
+    width: 70vw;
+    float: left;
+  }
+
+  .secondary-content {
+    width: calc(30vw - 10px);
+    float: right;
+  }
+
+  .secondary-content .featured, .sub {
+    width: 100%;
+    margin: 0;
+  }
+
+  .secondary-content .featured {
+    height: calc(50vh - 5px);
+    margin-bottom: 10px;
+  }
+
+  .sub {
+    height: calc(50vh - 5px);
+  }
+}
+
+
 
 @media screen and (min-width: 920px) {
   .main-container, .main {
