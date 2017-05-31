@@ -9,4 +9,10 @@ $(document).ready(function() {
     $('.nav').animate({right: '-200px'}, 500);
     $('.close-nav').animate({right: '-40px'}, 500);
   });
+
+  $(window).resize(function(){
+	  if ($(window).width() >= 970){
+	    $('.nav').removeAttr('style');
+	  }
+  });
 });
