@@ -28,7 +28,7 @@
   color: white;
   font-size: 20px;
   border-bottom: 1px solid white;
-  transition: right .5s;
+  transition: right 1s;
 }
 
 .close-nav {
@@ -43,16 +43,16 @@
 }
 
 .nav-button {
-  width: 40px;
-  height: 40px;
+  width: 18px;
+  height: 18px;
   background: black;
-  position: fixed;
+  position: absolute;
   right: 0;
-  top: 0;
-  /*transform: translateY(-50%);*/
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.nav-button:active~.nav, .nav-button:hover~.nav {
+.nav-button:hover~.nav {
   right: 0;
 }
 
