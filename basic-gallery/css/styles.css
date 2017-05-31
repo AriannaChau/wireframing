@@ -1,0 +1,75 @@
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+.clearfix:after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+}
+
+
+.item-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.image {
+  height: 200px;
+}
+
+.item {
+  height: 250px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    background: green;
+  }
+
+  .item {
+    width: 47.5%;
+    float: left;
+  }
+
+  .item:nth-child(even) {
+    margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background: blue;
+  }
+
+  .item {
+    width: 30%;
+    float: left;
+  }
+
+  .item-container {
+    max-width: 1200px;
+  }
+
+  .item:nth-child(even) {
+    margin-left: 0;
+  }
+
+  .item:nth-child(3n+2) {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+}
