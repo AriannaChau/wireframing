@@ -1,0 +1,115 @@
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.nav, .image {
+  display: none;
+}
+
+.container {
+  width: 95%;
+  margin: 10px auto 0;
+}
+
+.header {
+  position: relative;
+  height: 70px;
+}
+
+.title {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  width: 18px;
+  height: 18px;
+  background: black;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.jumbotron {
+  margin-bottom: 20px;
+}
+
+.jumbotron h1, .jumbotron h2 {
+  margin-bottom: 10px;
+}
+
+.item {
+  margin-bottom: 20px;
+}
+
+.item h2 {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  .image {
+    display: inline-block;
+    height: 170px;
+    float: left;
+    width: 170px;
+    background: black;
+  }
+
+  .item-content-container {
+    width: calc(100% - 170px);
+    float:right;
+    padding-left: 10px;
+  }
+
+  .item:nth-of-type(even) .image {
+    float: right;
+  }
+
+  .item:nth-of-type(even) .item-content-container {
+    float: left;
+    padding-left: 0;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 970px) {
+  .item div, .item:nth-of-type(even) .image, .item:nth-of-type(even) .item-content-container {
+    float: none;
+    padding: 0;
+  }
+
+  .item-content-container {
+    width: 100%;
+  }
+
+  .item {
+    width: 32%;
+    float: left;
+    text-align: center;
+  }
+
+  .item-content-container p {
+    text-align: left;
+  }
+
+  .item:nth-of-type(even) {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
