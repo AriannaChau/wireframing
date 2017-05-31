@@ -34,30 +34,22 @@
 .close-nav {
   position: fixed;
   top: 10px;
-  right: -20px;
-  height: 20px;
-  width: 20px;
+  right: -40px;
+  height: 40px;
+  width: 40px;
   background: white;
   z-index: 304234234;
   border: none;
 }
 
 .nav-button {
-  width: 18px;
-  height: 18px;
+  width: 40px;
+  height: 40px;
   background: black;
   position: absolute;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-}
-
-.nav-button:hover~.nav {
-  right: 0;
-}
-
-.nav:hover {
-  right: 0;
 }
 
 .nav ul {
